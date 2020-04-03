@@ -1,0 +1,198 @@
+/*CSS file*/
+/* * {
+  border: 1px red solid;
+} */
+
+html {
+  background-color: #edffea;
+}
+
+body {
+  font-size: 100%;
+
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400px;
+  letter-spacing: 0.05em;
+  color: #235952;
+  background-color: #75daad;
+}
+
+nav {
+  text-align: center;
+  margin: 0%;
+}
+
+a {
+  font-size: 1.5em;
+  font-family: cursive;
+  color: #7a4d1d;
+  text-decoration: none;
+  border: 2px #216353 solid;
+  display: inline-block;
+  padding: 0% 0.5%;
+
+}
+
+h2 {
+  font-size: 1.8em;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 300px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: #235952;
+  background-color: #75daad;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 300px;
+  letter-spacing: 0.05em;
+  color: rgb(42, 1, 1);
+  opacity: 0.75;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#flex-container p {
+  width: 60%;
+}
+
+#flex-container img {
+  width: 40%;
+  margin-left: 3%;
+  max-height: 450px;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  background-color: #231903;
+}
+
+th,
+td {
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 0.3em;
+  color: #edffea;
+  padding: 0.3em;
+  font-size: 1.5em;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.description {
+  text-align: left;
+}
+
+mark.red,
+.headerCodes {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #dcedc1;
+  color: #7a4d1d;
+}
+
+mark#links {
+  background-color: papayawhip;
+  font-size: 1.0em;
+}
+
+#table td,
+#head td,
+#body td,
+#th td,
+#colspan td,
+#example1 td {
+  color: #231903;
+  background-color: #edffea;
+
+}
+
+footer {
+  background-image: url("tom-gainor-ZqLeQDjY6fY-unsplash2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1.5%;
+  left: 0px;
+  bottom: 0px;
+
+
+}
+
+section#about {
+  text-align: left;
+  margin: 0 5%;
+}
+
+
+section#about p {
+  color: #eefffb;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section#picture {
+  text-align: right;
+  margin: 0 5%;
+
+
+}
+
+section#picture a {
+  color: #eefffb;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+section {
+  margin: 0 10%;
+}
+
+.headerCodes {
+  text-align: center;
+}
+
+
+
+a#mdn {
+  border: none;
+  padding: 0%;
+  margin: 0%;
+  font-size: 1em;
+}
+
+
+
+
+/*Responsive web view declarations*/
+
+@media only screen and (max-width: 700px) {
+
+  a,
+  p,
+  td,
+  th {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}

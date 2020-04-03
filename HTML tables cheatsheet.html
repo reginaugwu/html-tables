@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html tables cheatsheet</title>
+  <link href="https://fonts.googleapis.com/css?family=Amaranth|Archivo+Black|Roboto+Mono&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section id="preamble">
+    <h1 id="pagetitle">Html tables cheatsheet</h1>
+    <p>....for when the going gets tough and memory takes a hike :)</p>
+
+    <hr color="#235952" noshade>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#elements">Elements</a>
+        <a href="#attributes">Attributes</a>
+        <a href="#summary">Summary</a>
+        <a href="#sources">Sources and further reading</a>  
+    </nav>
+    <hr color="#235952" noshade>
+  </section>
+
+  <br>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <article id="flex-container">
+      <p>If you have worked with MS suite tables you will notice that all you needed to do was to click there,
+        import the table rows and columns, and start to fill in the blanks. In HTML the structure of the table
+        literally has to be specified in a series of text that instruct the browsers on how to display your table.
+        Not so straightforward, huh? Have no fear! With the aid of a handful of HTML elements and attributes, and
+        of course CSS, you can create some pretty awesome tables! This article will give a brief overview of these
+        elements and attributes to get you started on your next HTML table task. Lets proceed!
+      </p>
+      <img src="picture of html table2.png" alt="picture of html table">
+    </article>
+    
+  </section>
+  <br>
+  <section id="table1">
+    <h2 id="elements">Elements</h2>
+    <p class="headerCodes"><mark class="red">&lt;table&gt; &lt;caption&gt; &lt;thead&gt; &lt;tr&gt; &lt;tbody&gt;
+        &lt;td&gt; &lt;tfoot&gt;</p>
+    <table class="table">
+      <thead>
+        <tr class="tablehead">
+          <th>Name</th>
+          <th>Format</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="elements" id="table">
+          <td>Table element</td>
+          <td><mark class="red">&lt;table&gt;</mark></td>
+          <td class="description">This is how you introduce tables into your html code. It has opening and
+            closing tags, between which the entire code for the table is nested.</td>
+        </tr>
+
+        <tr class=elements id="caption">
+          <td>Caption</td>
+          <td><mark class="red">&lt;caption&gt;</mark></td>
+          <td class="description">This HTML element specifies the caption (or title)
+            of a table, and if used is <b>ALWAYS</b> the first child of a &lt;table&gt;.</td>
+        </tr>
+
+        <tr class="elements" id="head">
+          <td>Table Head</td>
+          <td><mark class="red">&lt;thead&gt;</mark></td>
+          <td class="description">This element is used to add headings to each column in the
+            table. Data is entered here using the <mark class="red">&lt;tr&gt; </mark> (table rows)
+            element which would enclose some <mark class="red">&lt;th&gt; </mark> elements.</td>
+        </tr>
+
+        <tr class=elements id="tr">
+          <td>Table row</td>
+          <td><mark class="red">&lt;tr&gt;</mark></td>
+          <td class="description">This is used to enter rows in an html document. It has
+            opening and closing tags. Between these tags data is entered using either a
+            <mark class="red">&lt;th&gt;</mark>element
+            (if in the <mark class="red">&lt;thead&gt;</mark> section of a table) or
+            a <mark class="red">&lt;td&gt;</mark> element (table data) element, which is
+            used to enter data rows everywhere else in the html table.
+        </tr>
+
+        <tr class="elements" id="body">
+          <td>Table Body</td>
+          <td><mark class="red">&lt;tbody&gt;</mark></td>
+          <td class="description">This is where the main contents of an html table are inserted.
+            It has opening and closing
+            tags. Data is entered here using the <mark class="red">&lt;tr&gt; </mark> (table rows)
+            element which would enclose some <mark class="red">&lt;td&gt; </mark> elements.</td>
+        </tr>
+
+        <tr class=elements id="td">
+          <td>Table Data</td>
+          <td><mark class="red">&lt;td&gt;</mark></td>
+          <td class="description">This element defines a cell of a table that contains data</td>
+        </tr>
+
+        <tr class=elements id="th">
+          <td>Table Data for <mark class="red">&lt;thead&gt;</mark></td>
+          <td><mark class="red">&lt;th&gt;</mark></td>
+          <td class="description">This element defines a cell that contains data in the
+             <mark class="red">&lt;thead&gt;</mark> section of a table</td>
+        </tr>
+
+        <tr class=elements id="foot">
+          <td>Table foot</td>
+          <td><mark class="red">&lt;tfoot&gt;</mark></td>
+          <td class="description">This element contains rows that summarize the contents of a table, e.g, totals.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <br>
+  <br>
+
+  <section id="table2">
+    <table class="table">
+      <thead>
+        <h2 id="attributes">Attributes</h2>
+      </thead>
+      <p class="headerCodes"> "colspan" "rowspan"</p>
+      <tr class="tablehead">
+        <th>Name</th>
+        <th>Format</th>
+        <th>Description</th>
+      </tr>
+
+
+      <tr class="attributes" id="colspan">
+        <td>Column Span</td>
+        <td><mark class="red">colspan=""</td>
+        <td class="description">This attribute is used to extend the column space occupied by a data cell.
+          An integar value to represent how many columns to span over is added between the parenthesis.
+          See the example in the last row of this table, where &lt;tfoot&gt;and "colspan" have been used
+          to create a data cell the occupies 3 columns.</td>
+      </tr>
+      <tr class="attributes" id="rowspan">
+        <td>Row Span</td>
+        <td><mark class="red">rowspan=""</td>
+        <td class="description">This attribute is used to extend the row space occupied by a data cell.
+          An integar value to represent how many rows to span over is added between the parenthesis</td>
+      </tr>
+
+      <tfoot class=example>
+        <tr class=elements id="example1">
+          <td colspan="3">A <mark class="red">&lt;tfoot&gt;</mark> element and a
+            <mark class="red">"colspan"</mark> attribute has been used
+            to create this row.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <br><br>
+
+  <section id="summary">
+    <h2>Summary</h2>
+    <article>
+      <p>And there you have it! The bare bones of an HTML table. Go forth and conquer that next HTML project.
+        Much Love!</p>
+    </article>
+  </section>
+
+
+  <section class="moreInfo">
+    <h2 id="sources">Sources and further reading</h2>
+    <p>For more details, check out the <a id="mdn" 
+      href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a> site. This site offers more indept information
+      about not just html tables but a host of other web related concepts.
+      Also, check out the Web Develepment course on
+      <a id="mdn" href="https://www.codecademy.com/learn/paths/web-development" target="_blank">Codecademy</a>,
+      a family that have contributed immensely in my web dev training.
+      Also, you can check out Dr. Angela Yu's Web Development course on
+      <a id="mdn" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">Udemy</a>, another place I have
+         been receiving training. Thanks guys!
+    </p>
+  </section>
+  <br>
+
+  
+
+</body>
+
+<footer>
+  <section id=about>
+    <br>
+    <p class="about">Compiled by: Reggie<br>
+      For: My first HTML challenge project.<br><br>
+      Happy Coding!</p>   
+  </section>
+  <section id="picture">
+    <a  href="https://unsplash.com/@its_tgain?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank">&copy; Picture by Tom Gainor</a>
+  </section>
+
+</footer>
+
+</html>
